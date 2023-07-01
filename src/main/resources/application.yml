@@ -1,0 +1,21 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    url: jdbc:mariadb://dev.ramgibauk.com:3306/t1?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+    driverClassName: org.mariadb.jdbc.Driver
+    username: chacha
+    password: ckxowls1!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+
+  devtools:
+    livereload:
+      enabled: true
